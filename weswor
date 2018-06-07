@@ -1,1 +1,5 @@
+import math
 
+print('BOOM tetris for jeff')
+eq = input("Give us your function: ")
+interval= input('what interval is your arc length on?: ')
