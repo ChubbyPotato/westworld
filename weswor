@@ -11,3 +11,4 @@ if eq == 1:
     b=float(input("what is b?: "))
     c=input("what is c?: ")
     ab=a*b
+    bmin= b-1
