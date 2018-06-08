@@ -11,4 +11,10 @@ if eq == 1:
     b=float(input("what is b?: "))
     c=input("what is c?: ")
     ab=a*b
-    bmin= b-1
+    bmin=b-1
+    
+if eq == 2:
+    print("ab^x+c")
+    ae=float(input("what is a?: "))
+    be=float(input("what is b?: "))
+    ce=input("what is c?: ")
