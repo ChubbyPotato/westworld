@@ -1,5 +1,5 @@
 import math
 
 print('BOOM tetris for jeff')
-eq = input("Give us your function: ")
+eq = input("What type of function? 1 for polyomial, 2 for exponential, 3 for trignometric, 4 for logarithm")
 interval= input('what interval is your arc length on?: ')
