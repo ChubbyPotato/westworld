@@ -1,7 +1,7 @@
 import math
 
-n=float(input("Numerator: "))
-d=float(input("Denominator: "))
+n=input("Numerator: ")
+d=input("Denominator: ")
 
-[int(b) for b in str(n)]
-[int(b) for b in str(d)]
+i=[int(b) for b in str(n)] #turns the numbers into lists e.g. 11 into [1,1]
+l=len(i)
