@@ -1,4 +1,4 @@
 import math
 
-n=input("Numberator: )
-d=input("Denominator: ")
+n=float(input("Numerator: "))
+d=float(input("Denominator: "))
