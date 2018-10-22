@@ -2,3 +2,6 @@ import math
 
 n=float(input("Numerator: "))
 d=float(input("Denominator: "))
+
+[int(b) for b in str(n)]
+[int(b) for b in str(d)]
