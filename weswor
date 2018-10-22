@@ -5,3 +5,4 @@ d=input("Denominator: ")
 
 i=[int(b) for b in str(n)] #turns the numbers into lists e.g. 11 into [1,1]
 l=len(i)
+
