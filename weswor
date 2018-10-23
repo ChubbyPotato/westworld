@@ -4,10 +4,15 @@ n=input("Numerator: ")
 d=input("Denominator: ")
 
 i=[int(b) for b in str(n)] #turns the numbers into lists e.g. 11 into [1,1]
-z=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-i.append(z)
+z=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] 
+#at that point 11 is the same as 11.00000, just makes the program run better
+i+=z
 print(i)
 
-#r=0
-#while r != 0:
- #   for x in range
+r=0
+while r != 0:
+    tot +=1
+    r= 
+    
+
+print(tot)
