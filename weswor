@@ -10,38 +10,46 @@ z=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 i+=z
 l=len(i)
 remain=[]
-epic= False
+okey=[]
+epic= 0
 
 number= 10*i[0]+i[1] #recursion part of the program takes 10 times f(n) and adds with f(n-1)
 r=number % d
-    
+divo=number/d
+flr= math.floor(divo)
+okey.append(flr)
 if r== 0:
-    non= "0"
+    print("Nonrepeating: 1")
+    epic = 2
 if r!=0:
     remain.append(r) #puts it into a list
-    print(remain)
     for x in range(1,l-1):
         number= 10*r+i[x+1] #recursion part of the program takes 10 times the previous remainder and adds with f(n-1)
+        divo=number/d
+        flr= math.floor(divo)
+        okey.append(flr)
         r=number % d #finds the remainder
         remain.append(r) #puts it into a list
-        print(remain)
         if r==0:
             break
         repint=[item for item, count in collections.Counter(remain).items() if count > 1]
         let=len(repint)
         if let !=0:
             jef= int(repint[0])
-            epic=True
+            epic=1
             break
 
-if epic == True:
+if epic == 1:
     beter=[b for b,p in enumerate(remain) if p == jef]
     repet= str(beter[1]-beter[0])
     bb= beter[0]
     print("Repeating: "+repet+"")
-    non = str(len(remain)-beter[1]+beter[0])
+    if okey[bb] != okey[bb+1]:
+        non = str(len(remain)-beter[1]+beter[0])
+    else:
+        non = str(len(remain)-beter[1]+beter[0]-1)
+    print("Nonrepeating: "+non+"")
 
-if epic == False:
+if epic == 0:
     non = str(len(remain))
-    
-print("Nonrepeating: "+non+"")
+    print("Nonrepeating: "+non+"")
