@@ -39,8 +39,9 @@ if epic == True:
     beter=[b for b,p in enumerate(remain) if p == jef]
     repet= str(beter[1]-beter[0])
     print("Repeating: "+repet+"")
+    non = str(len(remain)-beter[1]+beter[0])
 
 if epic == False:
     non = str(len(remain))
     
-#print("Nonrepeating: "+non+"")
+print("Nonrepeating: "+non+"")
