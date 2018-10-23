@@ -8,15 +8,18 @@ z=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 #at that point 11 is the same as 11.00000, just makes the program run better
 i+=z
 l=len(i)
-remain+[]
+remain=[]
 print(i)
 
 for x in range(0,l-1):
     print(i[x])
     print(i[x+1])
-    r=2
+    number= 10*i[x]+i[x+1]
+    r=d%number
+    print(r)
+    """r=2
     while r != 0:
         number= 10*i[x]+i[x+1]
-        r=number
-        print(number)
+        r=dnumber
+        print(number)"""
 
