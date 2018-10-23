@@ -12,14 +12,11 @@ remain=[]
 print(i)
 
 for x in range(0,l-1):
-    number= 10*i[x]+i[x+1]
-    print(number)
-    print(d)
-    r=number % d
-    print(r)
-    """r=2
+    r=2
     while r != 0:
         number= 10*i[x]+i[x+1]
-        r=dnumber
-        print(number)"""
+        print(number)
+        r=number % d
+        print(r)
+
 
