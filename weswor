@@ -21,7 +21,7 @@ if r!=0:
     remain.append(r) #puts it into a list
     print(remain)
     for x in range(1,l-1):
-        number= 10*r+i[x+1] #recursion part of the program takes 10 times f(n) and adds with f(n-1)
+        number= 10*r+i[x+1] #recursion part of the program takes 10 times the previous remainder and adds with f(n-1)
         r=number % d #finds the remainder
         remain.append(r) #puts it into a list
         print(remain)
