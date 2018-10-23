@@ -12,15 +12,17 @@ remain=[]
 print(i)
 r=2
 
-for x in range(0,l-1):
-    while r != 0:
+while r != 0:
+    for x in range(0,l-1):
         number= 10*i[x]+i[x+1]
         print(number)
         r=number % d
-        if r< 10:
-            remain.append(r)
         print(r)
         print(remain)
-    break
+        if r< 10:
+            remain.append(r)
+        if r==0:
+            break
+        
 
 
