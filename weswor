@@ -46,7 +46,7 @@ if epic == 1:
     bb= beter[0]
     print("Repeating Digits: "+repet+"")
     if okey[bb] != okey[bb+1]:
-        non = str(len(remain)-beter[1]+beter[0])
+        non = str(len(remain)-beter[1]+beter[0]-1)
     else:
         non = str(len(remain)-beter[1]+beter[0]-1)
     print("Nonrepeating Digits: "+non+"")
