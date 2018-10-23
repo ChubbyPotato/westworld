@@ -19,7 +19,8 @@ divo=number/d
 flr= math.floor(divo)
 okey.append(flr)
 if r== 0:
-    print("Nonrepeating: 1")
+    print("Nonrepeating Digits: 1")
+    print("Repeating Digits: 0")
     epic = 2
 if r!=0:
     remain.append(r) #puts it into a list
@@ -43,7 +44,7 @@ if epic == 1:
     beter=[b for b,p in enumerate(remain) if p == jef]
     repet= str(beter[1]-beter[0])
     bb= beter[0]
-    print("Repeating: "+repet+"")
+    print("Repeating Digits: "+repet+"")
     if okey[bb] != okey[bb+1]:
         non = str(len(remain)-beter[1]+beter[0])
     else:
