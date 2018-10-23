@@ -49,8 +49,8 @@ if epic == 1:
         non = str(len(remain)-beter[1]+beter[0])
     else:
         non = str(len(remain)-beter[1]+beter[0]-1)
-    print("Nonrepeating: "+non+"")
+    print("Nonrepeating Digits: "+non+"")
 
 if epic == 0:
     non = str(len(remain))
-    print("Nonrepeating: "+non+"")
+    print("Nonrepeating Digits: "+non+"")
