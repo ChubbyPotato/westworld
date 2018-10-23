@@ -10,6 +10,7 @@ z=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 i+=z
 l=len(i)
 remain=[]
+epic= False
 print(i)
 
 number= 10*i[0]+i[1] #recursion part of the program takes 10 times f(n) and adds with f(n-1)
@@ -17,6 +18,8 @@ r=number % d
 if r< 10:
     remain.append(r) #puts it into a list
     print(remain)
+if r== 0:
+    non= "0"
 if r!=0:
     for x in range(1,l-1):
         number= 10*r+i[x+1] #recursion part of the program takes 10 times f(n) and adds with f(n-1)
@@ -28,9 +31,15 @@ if r!=0:
         repint=[item for item, count in collections.Counter(remain).items() if count > 1]
         let=len(repint)
         if let !=0:
+            jef= int(repint[0])
+            epic=True
             break
 
-"""if r==0:
-    non="0"
+if epic == True:
+    beter=[b for b,p in enumerate(remain) if p == jef]
+    print(beter)
+
+if epic == False:
+    non = str(len(remain))
     
-print("Repeating: "+non+"")"""
+print("Nonrepeating: "+non+"")
