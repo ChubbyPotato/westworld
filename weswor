@@ -11,10 +11,12 @@ l=len(i)
 remain+[]
 print(i)
 
-r=0
-while r != 0:
-    tot +=1
-    r= 
-    
+for x in range(0,l-1):
+    print(i[x])
+    print(i[x+1])
+    r=2
+    while r != 0:
+        number= 10*i[x]+i[x+1]
+        r=number
+        print(number)
 
-print(tot)
