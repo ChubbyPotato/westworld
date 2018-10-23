@@ -16,9 +16,7 @@ r=2
 while r != 0:
     for x in range(0,l-1):
         number= 10*i[x]+i[x+1] #recursion part of the program takes 10 times f(n) and adds with f(n-1)
-        print(number)
         r=number % d #finds the remainder
-        print(r)
         if r< 10:
             remain.append(r) #puts it into a list
             print(remain)
@@ -26,6 +24,7 @@ while r != 0:
             break
         repint=[item for item, count in collections.Counter(remain).items() if count > 1]
         let=len(repint)
+        print(let)
         if let !=0:
             break
         
