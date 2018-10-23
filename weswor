@@ -1,7 +1,7 @@
 import math
 
 n=input("Numerator: ")
-d=input("Denominator: ")
+d=int(input("Denominator: "))
 
 i=[int(b) for b in str(n)] #turns the numbers into lists e.g. 11 into [1,1]
 z=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] 
@@ -12,10 +12,10 @@ remain=[]
 print(i)
 
 for x in range(0,l-1):
-    print(i[x])
-    print(i[x+1])
     number= 10*i[x]+i[x+1]
-    r=d%number
+    print(number)
+    print(d)
+    r=number % d
     print(r)
     """r=2
     while r != 0:
