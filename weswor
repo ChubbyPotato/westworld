@@ -18,9 +18,9 @@ while r != 0:
         print(number)
         r=number % d
         print(r)
-        print(remain)
         if r< 10:
             remain.append(r)
+            print(remain)
         if r==0:
             break
         
