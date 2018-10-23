@@ -4,5 +4,10 @@ n=input("Numerator: ")
 d=input("Denominator: ")
 
 i=[int(b) for b in str(n)] #turns the numbers into lists e.g. 11 into [1,1]
-l=len(i)
+z=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+i.append(z)
+print(i)
 
+#r=0
+#while r != 0:
+ #   for x in range
