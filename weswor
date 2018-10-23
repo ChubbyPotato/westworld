@@ -36,10 +36,12 @@ if r!=0:
             break
 
 if epic == True:
-    beter=[b for b,p in enumerate(remain) if p == jef]
-    print(beter)
+    repet=[b for b,p in enumerate(remain) if p == jef]
+    
+    print(repet)
 
 if epic == False:
     non = str(len(remain))
     
 print("Nonrepeating: "+non+"")
+print("Repeating: "+reped+"")
