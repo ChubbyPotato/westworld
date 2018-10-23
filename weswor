@@ -7,6 +7,8 @@ i=[int(b) for b in str(n)] #turns the numbers into lists e.g. 11 into [1,1]
 z=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] 
 #at that point 11 is the same as 11.00000, just makes the program run better
 i+=z
+l=len(i)
+remain+[]
 print(i)
 
 r=0
