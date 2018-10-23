@@ -17,7 +17,7 @@ for x in range(0,l-1):
         number= 10*i[x]+i[x+1]
         print(number)
         r=number % d
-        if r< 10
+        if r< 10:
             remain.append(r)
         print(r)
         print(remain)
